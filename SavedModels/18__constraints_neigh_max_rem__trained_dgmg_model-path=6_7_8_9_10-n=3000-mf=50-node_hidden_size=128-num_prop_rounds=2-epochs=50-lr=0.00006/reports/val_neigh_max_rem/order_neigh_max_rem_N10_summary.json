@@ -1,0 +1,13 @@
+{
+  "run_time": "order_neigh_max_rem",
+  "node_order": "neigh_max_rem",
+  "face_count": 10,
+  "gt_edges": 27537,
+  "graphs_total": 3871,
+  "graphs_total_display": 3871,
+  "graphs_perfect": 15,
+  "perfect_rate": 0.0039,
+  "final_precision": 0.3519503546099291,
+  "final_recall": 0.043250898790717945,
+  "num_runs": 1
+}

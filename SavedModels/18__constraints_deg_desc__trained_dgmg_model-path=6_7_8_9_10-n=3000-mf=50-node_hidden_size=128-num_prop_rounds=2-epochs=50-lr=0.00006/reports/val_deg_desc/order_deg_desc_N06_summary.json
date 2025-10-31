@@ -1,0 +1,13 @@
+{
+  "run_time": "order_deg_desc",
+  "node_order": "deg_desc",
+  "face_count": 6,
+  "gt_edges": 115,
+  "graphs_total": 20,
+  "graphs_total_display": 20,
+  "graphs_perfect": 12,
+  "perfect_rate": 0.6,
+  "final_precision": 0.9166666666666666,
+  "final_recall": 0.4782608695652174,
+  "num_runs": 1
+}

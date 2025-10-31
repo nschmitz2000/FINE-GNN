@@ -1,0 +1,8 @@
+{
+  "source_file": "processed_10_23086.json",
+  "graph_id": 29754,
+  "model": "constraints_fixed",
+  "F1": 0.5714285714285714,
+  "precision": 0.5714285714285714,
+  "recall": 0.5714285714285714
+}

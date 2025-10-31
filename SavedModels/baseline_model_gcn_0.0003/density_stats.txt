@@ -1,0 +1,73 @@
+Structural sanity checks (averages per face count):
+
+N=6:
+  Density GT        :  71.36%
+  Density Pred      :  72.84%
+  Density Gap       :   1.48%
+  Degree RMSE       :  1.091
+  Overfill rate     :  40.74%  (nodes with deg_pred > deg_gt)
+  Overfill mean     :  0.481  (excess degree per node)
+  Complete tendency :  72.84%  (avg deg_pred / (N-1))
+  Near-complete frac:  58.02%  (deg_pred ≥ N-2)
+  Excess edge ratio :  20.68%
+  Specificity (TN)  :  50.80%
+
+N=7:
+  Density GT        :  57.56%
+  Density Pred      :  71.85%
+  Density Gap       :  14.29%
+  Degree RMSE       :  1.601
+  Overfill rate     :  62.96%  (nodes with deg_pred > deg_gt)
+  Overfill mean     :  1.105  (excess degree per node)
+  Complete tendency :  71.85%  (avg deg_pred / (N-1))
+  Near-complete frac:  49.68%  (deg_pred ≥ N-2)
+  Excess edge ratio :  33.76%
+  Specificity (TN)  :  45.17%
+
+N=8:
+  Density GT        :  48.27%
+  Density Pred      :  67.15%
+  Density Gap       :  18.88%
+  Degree RMSE       :  1.986
+  Overfill rate     :  68.18%  (nodes with deg_pred > deg_gt)
+  Overfill mean     :  1.506  (excess degree per node)
+  Complete tendency :  67.15%  (avg deg_pred / (N-1))
+  Near-complete frac:  33.04%  (deg_pred ≥ N-2)
+  Excess edge ratio :  36.47%
+  Specificity (TN)  :  50.95%
+
+N=9:
+  Density GT        :  41.70%
+  Density Pred      :  63.90%
+  Density Gap       :  22.20%
+  Degree RMSE       :  2.454
+  Overfill rate     :  71.61%  (nodes with deg_pred > deg_gt)
+  Overfill mean     :  1.928  (excess degree per node)
+  Complete tendency :  63.90%  (avg deg_pred / (N-1))
+  Near-complete frac:  22.30%  (deg_pred ≥ N-2)
+  Excess edge ratio :  38.10%
+  Specificity (TN)  :  52.52%
+
+N=10:
+  Density GT        :  35.80%
+  Density Pred      :  61.44%
+  Density Gap       :  25.63%
+  Degree RMSE       :  2.986
+  Overfill rate     :  74.09%  (nodes with deg_pred > deg_gt)
+  Overfill mean     :  2.407  (excess degree per node)
+  Complete tendency :  61.44%  (avg deg_pred / (N-1))
+  Near-complete frac:  15.50%  (deg_pred ≥ N-2)
+  Excess edge ratio :  39.93%
+  Specificity (TN)  :  54.01%
+
+N=all:
+  Density GT        :  39.16%
+  Density Pred      :  62.88%
+  Density Gap       :  23.71%
+  Degree RMSE       :  2.704
+  Overfill rate     :  72.53%  (nodes with deg_pred > deg_gt)
+  Overfill mean     :  2.152  (excess degree per node)
+  Complete tendency :  62.88%  (avg deg_pred / (N-1))
+  Near-complete frac:  19.72%  (deg_pred ≥ N-2)
+  Excess edge ratio :  38.89%
+  Specificity (TN)  :  53.13%

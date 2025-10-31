@@ -1,0 +1,37 @@
+{
+  "metric": "Precision",
+  "tie_tolerance": 0.0,
+  "total_graphs": 6987,
+  "totals": {
+    "B_better": 2774,
+    "A_better": 2687,
+    "tie": 1526
+  },
+  "by_facecount": {
+    "6": {
+      "B_better": 12,
+      "A_better": 7,
+      "tie": 8
+    },
+    "7": {
+      "B_better": 29,
+      "A_better": 59,
+      "tie": 25
+    },
+    "8": {
+      "B_better": 184,
+      "A_better": 157,
+      "tie": 77
+    },
+    "9": {
+      "B_better": 1004,
+      "A_better": 988,
+      "tie": 529
+    },
+    "10": {
+      "B_better": 1545,
+      "A_better": 1476,
+      "tie": 887
+    }
+  }
+}

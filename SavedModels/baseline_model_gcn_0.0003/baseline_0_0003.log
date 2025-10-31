@@ -1,0 +1,231 @@
+nohup: ignoring input
+/home/nschmitz/GNNs/MasterThesisGNN/DGMG/DGMG_current_baseline.py:618: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  metadata = torch.load(load_path_metadata)
+✅ Using device: cuda:1
+/home/nschmitz/GNNs/kirigami-database/data/cleaned
+Model without constraints:  False
+💿 Folder that model data gets saved into:  22__testing__
+Metrics---
+Amount unfoldings:  3000
+Max files per dir:  50
+Batch size:  1
+Num prop rounds:  2
+Learning rate:  0.0003
+Num epochs:  10
+Accum steps:  4
+Training node ordering strategy:  NodeOrder.RANDOM
+Add edge is deterministic:  True
+Add edge is deterministic threshold:  0.5
+Calc PR-Curve:  False
+---------------
+6_7_8_9_10
+Found existing dataset files; skipping save.
+Loading dataset from disk…
+6_7_8_9_10
+Max amount of features per node in a graph:  128
+Loaded 46571 graphs with actions!
+Train size: 32599, Validation size: 6985, Test size: 6987
+Graph(num_nodes=10, num_edges=18,
+      ndata_schemes={'a': Scheme(shape=(256,), dtype=torch.float32), 'hv': Scheme(shape=(128,), dtype=torch.float32), 'deg_rem': Scheme(shape=(1,), dtype=torch.int16), 'deg_target': Scheme(shape=(1,), dtype=torch.int16)}
+      edata_schemes={'he': Scheme(shape=(1,), dtype=torch.float32)})
+[[0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 1. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+ [1. 0. 1. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 1. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 1. 0. 1.]
+ [0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]]
+--------
+Graph(num_nodes=10, num_edges=32,
+      ndata_schemes={'deg_target': Scheme(shape=(1,), dtype=torch.int16), 'hv': Scheme(shape=(128,), dtype=torch.float32)}
+      edata_schemes={})
+[[0. 0. 0. 1. 0. 1. 0. 1. 0. 1.]
+ [0. 0. 1. 0. 1. 0. 1. 0. 1. 0.]
+ [0. 1. 0. 1. 0. 1. 0. 0. 0. 0.]
+ [1. 0. 1. 0. 1. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 1. 0. 0. 0. 0. 0. 1.]
+ [1. 0. 1. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 1. 0. 1. 0. 0.]
+ [1. 0. 0. 0. 0. 0. 1. 0. 1. 0.]
+ [0. 1. 0. 0. 0. 0. 0. 1. 0. 1.]
+ [1. 0. 0. 0. 1. 0. 0. 0. 1. 0.]]
+Device for model: cuda:1
+Training started at: 2025-10-08 07:39:04
+=== Epoch 1: Train Loss: 0.6444 ===
+Epoch 1: Validation Loss: 0.6413
+Epoch 1: Edge Precision: 0.3218, Recall: 0.6834, F1: 0.4296, Jaccard: 0.2778
+Epoch 1: TP: 4.80, FP: 10.51, FN: 2.23
+[Epoch 1] ⏱️ Total: 242.80s | 2025-10-08 07:43:06 | 🏋️ Train: 208.10s | ✅ Val: 34.70s
+=== Epoch 2: Train Loss: 0.6329 ===
+Epoch 2: Validation Loss: 0.6375
+Epoch 2: Edge Precision: 0.3371, Recall: 0.6059, F1: 0.4182, Jaccard: 0.2704
+Epoch 2: TP: 4.25, FP: 8.76, FN: 2.77
+[Epoch 2] ⏱️ Total: 241.19s | 2025-10-08 07:47:08 | 🏋️ Train: 206.16s | ✅ Val: 35.03s
+💾 Baseline checkpoint saved: /home/nschmitz/GNNs/MasterThesisGNN/SavedModels/baseline_model_gcn_0.0003/baseline_checkpoint_epoch_2.pth
+=== Epoch 3: Train Loss: 0.6298 ===
+Epoch 3: Validation Loss: 0.6366
+Epoch 3: Edge Precision: 0.3183, Recall: 0.7260, F1: 0.4370, Jaccard: 0.2834
+Epoch 3: TP: 5.09, FP: 11.26, FN: 1.93
+[Epoch 3] ⏱️ Total: 234.87s | 2025-10-08 07:51:03 | 🏋️ Train: 199.09s | ✅ Val: 35.78s
+=== Epoch 4: Train Loss: 0.6282 ===
+Epoch 4: Validation Loss: 0.6355
+Epoch 4: Edge Precision: 0.3195, Recall: 0.7172, F1: 0.4363, Jaccard: 0.2831
+Epoch 4: TP: 5.03, FP: 11.05, FN: 1.99
+[Epoch 4] ⏱️ Total: 236.63s | 2025-10-08 07:54:59 | 🏋️ Train: 200.43s | ✅ Val: 36.20s
+💾 Baseline checkpoint saved: /home/nschmitz/GNNs/MasterThesisGNN/SavedModels/baseline_model_gcn_0.0003/baseline_checkpoint_epoch_4.pth
+=== Epoch 5: Train Loss: 0.6268 ===
+Epoch 5: Validation Loss: 0.6376
+Epoch 5: Edge Precision: 0.3145, Recall: 0.7633, F1: 0.4414, Jaccard: 0.2867
+Epoch 5: TP: 5.36, FP: 12.03, FN: 1.67
+[Epoch 5] ⏱️ Total: 234.15s | 2025-10-08 07:58:53 | 🏋️ Train: 197.81s | ✅ Val: 36.33s
+=== Epoch 6: Train Loss: 0.6265 ===
+Epoch 6: Validation Loss: 0.6357
+Epoch 6: Edge Precision: 0.3152, Recall: 0.7556, F1: 0.4404, Jaccard: 0.2860
+Epoch 6: TP: 5.30, FP: 11.87, FN: 1.72
+[Epoch 6] ⏱️ Total: 233.80s | 2025-10-08 08:02:47 | 🏋️ Train: 196.79s | ✅ Val: 37.02s
+💾 Baseline checkpoint saved: /home/nschmitz/GNNs/MasterThesisGNN/SavedModels/baseline_model_gcn_0.0003/baseline_checkpoint_epoch_6.pth
+=== Epoch 7: Train Loss: 0.6251 ===
+Epoch 7: Validation Loss: 0.6386
+Epoch 7: Edge Precision: 0.3166, Recall: 0.7475, F1: 0.4402, Jaccard: 0.2859
+Epoch 7: TP: 5.25, FP: 11.67, FN: 1.78
+[Epoch 7] ⏱️ Total: 234.12s | 2025-10-08 08:06:41 | 🏋️ Train: 197.63s | ✅ Val: 36.49s
+=== Epoch 8: Train Loss: 0.6250 ===
+Epoch 8: Validation Loss: 0.6372
+Epoch 8: Edge Precision: 0.3160, Recall: 0.7459, F1: 0.4393, Jaccard: 0.2853
+Epoch 8: TP: 5.23, FP: 11.67, FN: 1.79
+[Epoch 8] ⏱️ Total: 235.97s | 2025-10-08 08:10:37 | 🏋️ Train: 199.05s | ✅ Val: 36.92s
+💾 Baseline checkpoint saved: /home/nschmitz/GNNs/MasterThesisGNN/SavedModels/baseline_model_gcn_0.0003/baseline_checkpoint_epoch_8.pth
+=== Epoch 9: Train Loss: 0.6241 ===
+Epoch 9: Validation Loss: 0.6360
+Epoch 9: Edge Precision: 0.3164, Recall: 0.7420, F1: 0.4386, Jaccard: 0.2848
+Epoch 9: TP: 5.21, FP: 11.60, FN: 1.81
+[Epoch 9] ⏱️ Total: 237.11s | 2025-10-08 08:14:34 | 🏋️ Train: 202.55s | ✅ Val: 34.56s
+/home/nschmitz/GNNs/MasterThesisGNN/DGMG/DGMG_current_baseline.py:1359: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(os.path.join(run_folder, "baseline_model_final.pth"), map_location=device)
+=== Epoch 10: Train Loss: 0.6226 ===
+Epoch 10: Validation Loss: 0.6381
+Epoch 10: Edge Precision: 0.3160, Recall: 0.7360, F1: 0.4372, Jaccard: 0.2837
+Epoch 10: TP: 5.16, FP: 11.53, FN: 1.86
+[Epoch 10] ⏱️ Total: 241.75s | 2025-10-08 08:18:36 | 🏋️ Train: 206.86s | ✅ Val: 34.89s
+💾 Baseline checkpoint saved: /home/nschmitz/GNNs/MasterThesisGNN/SavedModels/baseline_model_gcn_0.0003/baseline_checkpoint_epoch_10.pth
+Training finished at: 2025-10-08 08:18:36
+Training time (s): 2372.4072077274323
+✅ Baseline model saved to: /home/nschmitz/GNNs/MasterThesisGNN/SavedModels/baseline_model_gcn_0.0003/baseline_model_final.pth
+📈 Baseline metrics saved to: /home/nschmitz/GNNs/MasterThesisGNN/SavedModels/baseline_model_gcn_0.0003/metrics.json
+✅ Loaded baseline from: /home/nschmitz/GNNs/MasterThesisGNN/SavedModels/baseline_model_gcn_0.0003/baseline_model_final.pth
+
+Face Count 6: 20 graphs evaluated
+📉  Average edge-level rates
+  ✅ Recall (TP/TP+FN): 67.50%
+  ⚠️ False Negative rate (FN/TP+FN): 32.50%
+  ❌ False Discovery rate (FP/TP+FP): 39.88%
+  🎯 Precision (TP/TP+FP): 60.13%
+📊 Standard Deviation Across Graphs:
+  ✅ Std. Recall: 20.76%
+  ⚠️ Std. False Negative rate: 20.76%
+  ❌ Std. False Discovery rate: 11.94%
+  🎯 Std. Precision: 11.94%
+📉  Average detailed edge-metrics
+     F1: 0.63
+     Jaccard: 0.48
+     TP: 3.85
+     FP: 2.45
+     FN: 1.90
+
+Face Count 7: 119 graphs evaluated
+📉  Average edge-level rates
+  ✅ Recall (TP/TP+FN): 69.99%
+  ⚠️ False Negative rate (FN/TP+FN): 30.01%
+  ❌ False Discovery rate (FP/TP+FP): 53.52%
+  🎯 Precision (TP/TP+FP): 46.48%
+📊 Standard Deviation Across Graphs:
+  ✅ Std. Recall: 17.22%
+  ⚠️ Std. False Negative rate: 17.22%
+  ❌ Std. False Discovery rate: 10.82%
+  🎯 Std. Precision: 10.82%
+📉  Average detailed edge-metrics
+     F1: 0.55
+     Jaccard: 0.39
+     TP: 4.23
+     FP: 4.97
+     FN: 1.82
+
+Face Count 8: 410 graphs evaluated
+📉  Average edge-level rates
+  ✅ Recall (TP/TP+FN): 72.59%
+  ⚠️ False Negative rate (FN/TP+FN): 27.41%
+  ❌ False Discovery rate (FP/TP+FP): 60.10%
+  🎯 Precision (TP/TP+FP): 39.90%
+📊 Standard Deviation Across Graphs:
+  ✅ Std. Recall: 17.37%
+  ⚠️ Std. False Negative rate: 17.37%
+  ❌ Std. False Discovery rate: 7.62%
+  🎯 Std. Precision: 7.62%
+📉  Average detailed edge-metrics
+     F1: 0.51
+     Jaccard: 0.35
+     TP: 4.73
+     FP: 7.16
+     FN: 1.81
+
+Face Count 9: 2565 graphs evaluated
+📉  Average edge-level rates
+  ✅ Recall (TP/TP+FN): 72.24%
+  ⚠️ False Negative rate (FN/TP+FN): 27.76%
+  ❌ False Discovery rate (FP/TP+FP): 66.40%
+  🎯 Precision (TP/TP+FP): 33.60%
+📊 Standard Deviation Across Graphs:
+  ✅ Std. Recall: 16.88%
+  ⚠️ Std. False Negative rate: 16.88%
+  ❌ Std. False Discovery rate: 6.16%
+  🎯 Std. Precision: 6.16%
+📉  Average detailed edge-metrics
+     F1: 0.46
+     Jaccard: 0.30
+     TP: 5.06
+     FP: 10.05
+     FN: 1.95
+
+Face Count 10: 3871 graphs evaluated
+📉  Average edge-level rates
+  ✅ Recall (TP/TP+FN): 74.75%
+  ⚠️ False Negative rate (FN/TP+FN): 25.25%
+  ❌ False Discovery rate (FP/TP+FP): 71.21%
+  🎯 Precision (TP/TP+FP): 28.79%
+📊 Standard Deviation Across Graphs:
+  ✅ Std. Recall: 16.29%
+  ⚠️ Std. False Negative rate: 16.29%
+  ❌ Std. False Discovery rate: 5.15%
+  🎯 Std. Precision: 5.15%
+📉  Average detailed edge-metrics
+     F1: 0.41
+     Jaccard: 0.26
+     TP: 5.31
+     FP: 13.22
+     FN: 1.80
+
+Face Count 999: 6985 graphs evaluated
+📉  Average edge-level rates
+  ✅ Recall (TP/TP+FN): 73.60%
+  ⚠️ False Negative rate (FN/TP+FN): 26.40%
+  ❌ False Discovery rate (FP/TP+FP): 68.40%
+  🎯 Precision (TP/TP+FP): 31.60%
+📊 Standard Deviation Across Graphs:
+  ✅ Std. Recall: 16.66%
+  ⚠️ Std. False Negative rate: 16.66%
+  ❌ Std. False Discovery rate: 7.10%
+  🎯 Std. Precision: 7.10%
+📉  Average detailed edge-metrics
+     F1: 0.44
+     Jaccard: 0.28
+     TP: 5.16
+     FP: 11.53
+     FN: 1.86
+[6, 7, 8, 9, 10, 999]
+[0.675, 0.6998799519807923, 0.7259001161440185, 0.722419474612457, 0.7474797333038098, 0.7359920918976036]
+[np.float64(0.11939738796487329), np.float64(0.10815318158519721), np.float64(0.07622411339620001), np.float64(0.06157377557091452), np.float64(0.05154978838135304), np.float64(0.07102911437960681)]
+✅ Stats saved to /home/nschmitz/GNNs/MasterThesisGNN/SavedModels/baseline_model_gcn_0.0003/metrics.json
+✅ Code finished successfully at: 2025-10-08 08:19:38

@@ -1,0 +1,8 @@
+{
+  "source_file": "processed_10_24562.json",
+  "graph_id": 41406,
+  "model": "constraints_round_robin",
+  "F1": 0.2857142857142857,
+  "precision": 0.2857142857142857,
+  "recall": 0.2857142857142857
+}

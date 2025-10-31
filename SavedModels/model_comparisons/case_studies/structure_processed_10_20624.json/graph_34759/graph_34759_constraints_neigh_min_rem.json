@@ -1,0 +1,8 @@
+{
+  "source_file": "processed_10_20624.json",
+  "graph_id": 34759,
+  "model": "constraints_neigh_min_rem",
+  "F1": 0.15384615384615383,
+  "precision": 0.16666666666666666,
+  "recall": 0.14285714285714285
+}

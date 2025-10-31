@@ -1,0 +1,8 @@
+{
+  "source_file": "cleaned_faces_10_structure_41.json",
+  "graph_id": 5610,
+  "model": "constraints_deg_desc",
+  "F1": 0.14285714285714285,
+  "precision": 0.14285714285714285,
+  "recall": 0.14285714285714285
+}

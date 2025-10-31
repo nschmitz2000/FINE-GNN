@@ -1,0 +1,7 @@
+data/
+SavedDatasets/
+dataset/
+DGMG/dgmg-adjusted-to-edge-prediction/data/
+/my_models.pkl
+/data.zip
+SavedDatasets/polyhedra_graph_dataset_unfolded_graphs-path=6_7_8_9-n=1000-mf=400.dgl

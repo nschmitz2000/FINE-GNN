@@ -1,0 +1,13 @@
+{
+  "run_time": "order_round_robin",
+  "node_order": "round_robin",
+  "face_count": 7,
+  "gt_edges": 719,
+  "graphs_total": 119,
+  "graphs_total_display": 119,
+  "graphs_perfect": 9,
+  "perfect_rate": 0.0756,
+  "final_precision": 0.6326530612244898,
+  "final_recall": 0.043115438108484005,
+  "num_runs": 1
+}

@@ -1,0 +1,8 @@
+{
+  "source_file": "processed_10_02172.json",
+  "graph_id": 43546,
+  "model": "constraints_deg_asc",
+  "F1": 0.5333333333333333,
+  "precision": 0.5714285714285714,
+  "recall": 0.5
+}

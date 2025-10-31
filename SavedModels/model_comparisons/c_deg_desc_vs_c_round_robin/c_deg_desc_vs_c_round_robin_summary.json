@@ -1,0 +1,70 @@
+{
+  "model_A_order_strategy": "deg_desc",
+  "model_B_order_strategy": "round_robin",
+  "model_A_with_constraints": true,
+  "model_B_with_constraints": true,
+  "graphs": 6987,
+  "precision": {
+    "mean_delta": 0.0012823134119827983,
+    "median_delta": 0.0,
+    "std_delta": 0.23721042212105453,
+    "pct_B_better": 0.39702304279375983,
+    "pct_equal": 0.21840561041935022,
+    "pct_A_better": 0.3845713467868899,
+    "direction": "higher_is_better"
+  },
+  "recall": {
+    "mean_delta": -0.0015666850681878587,
+    "median_delta": 0.0,
+    "std_delta": 0.23672157198433344,
+    "pct_B_better": 0.37584084728782025,
+    "pct_equal": 0.25032202662086733,
+    "pct_A_better": 0.3738371260913124,
+    "direction": "higher_is_better"
+  },
+  "f1": {
+    "mean_delta": -0.0002561176240867101,
+    "median_delta": 0.0,
+    "std_delta": 0.23663643710486607,
+    "pct_B_better": 0.39702304279375983,
+    "pct_equal": 0.21840561041935022,
+    "pct_A_better": 0.3845713467868899,
+    "direction": "higher_is_better"
+  },
+  "jaccard": {
+    "mean_delta": 0.00012862954039424655,
+    "median_delta": 0.0,
+    "std_delta": 0.2004524433128983,
+    "pct_B_better": 0.39702304279375983,
+    "pct_equal": 0.21840561041935022,
+    "pct_A_better": 0.3845713467868899,
+    "direction": "higher_is_better"
+  },
+  "tp": {
+    "mean_delta": -0.0093029912695005,
+    "median_delta": 0.0,
+    "std_delta": 1.6555545681835746,
+    "pct_B_better": 0.37584084728782025,
+    "pct_equal": 0.25032202662086733,
+    "pct_A_better": 0.3738371260913124,
+    "direction": "higher_is_better"
+  },
+  "fp": {
+    "mean_delta": -0.0427937598397023,
+    "median_delta": 0.0,
+    "std_delta": 1.6491365764557517,
+    "pct_B_better": 0.38643194504079004,
+    "pct_equal": 0.24989265779304423,
+    "pct_A_better": 0.36367539716616576,
+    "direction": "lower_is_better"
+  },
+  "fn": {
+    "mean_delta": 0.0093029912695005,
+    "median_delta": 0.0,
+    "std_delta": 1.6555545681835746,
+    "pct_B_better": 0.37584084728782025,
+    "pct_equal": 0.25032202662086733,
+    "pct_A_better": 0.3738371260913124,
+    "direction": "lower_is_better"
+  }
+}

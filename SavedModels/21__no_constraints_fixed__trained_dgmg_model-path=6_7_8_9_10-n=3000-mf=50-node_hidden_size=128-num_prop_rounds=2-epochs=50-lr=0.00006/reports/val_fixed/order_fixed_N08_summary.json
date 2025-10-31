@@ -1,0 +1,13 @@
+{
+  "run_time": "order_fixed",
+  "node_order": "fixed",
+  "face_count": 8,
+  "gt_edges": 2679,
+  "graphs_total": 410,
+  "graphs_total_display": 410,
+  "graphs_perfect": 0,
+  "perfect_rate": 0.0,
+  "final_precision": 0.4,
+  "final_recall": 0.011944755505785741,
+  "num_runs": 1
+}
